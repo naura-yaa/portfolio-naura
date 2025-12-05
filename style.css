@@ -633,7 +633,7 @@ footer {
   }
 
    /* MOBILE */
-   
+
 @media (max-width: 767px) {
 
     /* === NAVBAR CENTER === */
@@ -777,4 +777,5 @@ footer {
   .contact-card {
     width: 80%;
   }
+}
 }
