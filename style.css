@@ -631,93 +631,99 @@ footer {
     padding: 10px 15px;
     top: 10px;
   }
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .nav-list li {
-    margin: 0 10px;
-  }
-  .nav-list a {
-    font-size: 14px;
-    padding: 6px 10px;
-  }
 
-  /* HOME SECTION */
-  #home {
-    flex-direction: column;
-    padding-top: 140px;
-  }
-  .hero-text {
-    max-width: 100%;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 10px;
-  }
-  .hero-text h1 {
-    font-size: 1.9rem;
-  }
-  .hero-text p {
-    font-size: 1.1rem;
-  }
-  .hero-image {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  .hero-image img {
-    width: 200px;
-    height: 200px;
-  }
+   /* MOBILE */
+   
+@media (max-width: 767px) {
 
-  /* ABOUT SECTION */
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-img img {
-    width: 200px;
-    height: 200px;
-  }
-  .about-text h2 {
-    font-size: 28px;
-  }
-  .about-text p {
-    font-size: 16px;
-  }
+    /* === NAVBAR CENTER === */
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  /* tengah */
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
 
-  /* SKILLS */
-  .skills-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .skill {
-    width: 95%;
-  }
+    .nav-list li a {
+        font-size: 14px;
+    }
 
-  /* PORTFOLIO CARDS */
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .card {
-    padding: 25px;
-  }
 
-  /* CONTACT */
-  .contact-card {
-    width: 100%;
-    padding: 25px;
-  }
-  .contact-card h2 {
-    font-size: 28px;
-  }
+    /* === HERO SECTION === */
+    #home .container {
+        text-align: center;
+        padding: 20px;
+    }
 
-  /* FOOTER */
-  .social-links {
-    font-size: 14px;
-  }
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+
+    /* === ABOUT SECTION === */
+    .about-container {
+        display: flex;
+        flex-direction: row;        /* kiri-kanan */
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .about-img img {
+        width: 120px;               /* ukuran lebih kecil */
+        height: auto;
+    }
+
+    .about-text {
+        text-align: left;           /* rata kiri biar rapih */
+        width: 60%;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+    /* === SKILLS === */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    /* === PORTFOLIO CARDS === */
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* === CONTACT SECTION === */
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* === FOOTER === */
+    .footer-container {
+        text-align: center;
+        padding: 20px;
+    }
 }
+
 
 /* TABLET */
 
