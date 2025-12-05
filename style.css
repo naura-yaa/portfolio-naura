@@ -631,11 +631,6 @@ footer {
     padding: 10px 15px;
     top: 10px;
   }
-
-   /* MOBILE */
-
-@media (max-width: 767px) {
-
     /* === NAVBAR CENTER === */
     .nav-list {
         display: flex;
@@ -777,5 +772,4 @@ footer {
   .contact-card {
     width: 80%;
   }
-}
 }
