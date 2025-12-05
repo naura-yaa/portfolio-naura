@@ -622,103 +622,132 @@ footer {
 /* Responsif */
 
 /* SMARTPHONE */
+
 @media (max-width: 767px) {
-  /* NAVBAR */
+  /* Navbar */
   .navbar {
     width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 15px;
-    top: 10px;
+    left: 5%;
+    padding: 10px;
   }
-    /* === NAVBAR CENTER === */
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;  /* tengah */
-        align-items: center;
-        gap: 15px;
-        padding: 10px 0;
-    }
+  .nav-list {
+    gap: 10px;
+  }
+  .nav-list a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 
-    .nav-list li a {
-        font-size: 14px;
-    }
+  /* Home */
+  #home {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .hero-text {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img img {
+    width: 180px;
+    height: 180px;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
 
-    /* === HERO SECTION === */
-    #home .container {
-        text-align: center;
-        padding: 20px;
-    }
+  /* Skills */
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero-text h1 {
-        font-size: 26px;
-    }
+  /* Portfolio Cards */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 20px;
+  }
 
+  /* Contact */
+  .contact-card {
+    width: 100%;
+    padding: 25px;
+  }
 
-    /* === ABOUT SECTION === */
-    .about-container {
-        display: flex;
-        flex-direction: row;        /* kiri-kanan */
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .about-img img {
-        width: 120px;               /* ukuran lebih kecil */
-        height: auto;
-    }
-
-    .about-text {
-        text-align: left;           /* rata kiri biar rapih */
-        width: 60%;
-    }
-
-    .about-text h2 {
-        font-size: 22px;
-    }
-
-    .about-text p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
-
-    /* === SKILLS === */
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 20px;
-    }
-
-    /* === PORTFOLIO CARDS === */
-    .cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    /* === CONTACT SECTION === */
-    .contact-card {
-        width: 90%;
-        padding: 20px;
-    }
-
-    /* === FOOTER === */
-    .footer-container {
-        text-align: center;
-        padding: 20px;
-    }
+  /* Footer */
+  .social-links {
+    text-align: center;
+  }
 }
 
+/* 📱📲 TABLET (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    width: 80%;
+    left: 10%;
+    padding: 12px;
+  }
+
+  /* Home */
+  .hero-text {
+    max-width: 80%;
+    margin-left: 0;
+    text-align: center;
+    margin: auto;
+  }
+
+  /* About */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+
+  /* Portfolio */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-card {
+    width: 80%;
+  }
+}
+
+/* 💻 LAPTOP & DESKTOP (1025px+) */
+@media (min-width: 1025px) {
+  .navbar {
+    width: 60%;
+    left: 20%;
+  }
+
+  .hero-text {
+    max-width: 50%;
+    margin-left: 300px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* TABLET */
 
