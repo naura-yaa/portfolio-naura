@@ -593,15 +593,16 @@ footer {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 290px;
 }
-
-.social-link {
+.social-link  {
   color: #4daaff;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
 }
-
 .social-link:hover {
   color: #82c6ff;
   text-decoration: underline;
